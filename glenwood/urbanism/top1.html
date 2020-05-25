@@ -1,0 +1,97 @@
+<html>
+
+<head>
+<title>Glenwood Beltline Links</title>
+
+<link href="../../jquery/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+
+<script type="application/javascript">window.jQuery || document.write(unescape('%3Cscript src="../../jquery/jquery.min.js"%3E%3C/script%3E'))</script>
+
+<style type="text/css">
+body {
+	background:#000;
+	color:#fff;
+	margin-top:0px;
+}
+a {
+	color:#fff;
+	text-decoration: none;
+}
+.active {
+	background: #fff;
+	color: #000;
+	height:30px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+#content {
+	margin:6px;
+}
+#donateLink {
+	font-size:11pt;
+	border-radius: 6px;
+	color:#fff;
+	background:#c00;
+	padding:3px 8px 3px;
+}
+#donateLink:hover {
+	color:#fff;
+}
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+	//$('#myButton').live('click', function () {
+	$('.toptabs li a').live('click', function () {
+		//$(this).parent('ul').children('li a').removeClass("active"); // Didn't work
+		$('.toptabs li a').removeClass("active");
+
+		$(this).addClass("active");
+		//$(this).parent('ul').children('span').attr('style', 'display:inline');
+	});
+	$('#donateLink').live('click', function () {
+		$('.toptabs li a').removeClass("active");
+	});
+});
+
+</script>
+
+
+</head>
+
+<html>
+<body>
+<div id="header" style="display:none"></div>
+
+<div id="content">
+<div style="float:left; margin:6px 10px 0 5px"><b>Beltline Action Links</b></div>
+
+<!--
+<div id="donateLink" style="float:right; margin-top:6px; margin-right:10px"><b><a href="main.html" target="main">Donate Now</a></b></div>
+-->
+<ul class='toptabs nav nav-pills'>
+	<!--
+	<li><a href="https://docs.google.com/a/dreamstudio.com/spreadsheet/viewform?fromEmail=true&formkey=dHNER3UzTjVYV1hYZVVPUHBod0w3QlE6MQ" target="main">Call-In Day</a></li>
+	-->
+	<li><a class="active" href="/local/glenwood/intro.html" target="main">Smart Glenwood</a></li>
+	
+	<li><a href="http://sandatlanta.org/item/98894?mode=h&subtopiccount=0&hideemaillinks=1" target="main">Details from SAND</a></li>
+	
+	<li><a href="http://glenwoodpark.com/item/6156?mode=e&subtopiccount=0&hideemaillinks=1&hideheader=1" target="main">Glenwood Park Philosophy</a></li>
+	<!--
+	<li><a href="http://eastatlanta.patch.com/topics/Glenwood+Place" target="main">News from Patch</a></li>
+	-->
+	<li><a href="http://www.change.org/petitions/the-city-of-atlanta-stop-the-proposed-development-at-800-glenwood-avenue" target="main">Sign the Petition</a></li>
+	<!--
+	<li><a href="http://resurgentatlanta.com/2012/10/27/strong-words-from-npu-w-about-the-proposed-development-at-800-glenwood/" target="main">Learn More</a></li>
+	-->
+	
+</ul>
+
+
+</div>
+
+</body>
+</html>

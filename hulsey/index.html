@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Hulsey Yard - Reenvisioning Atlanta's CSX Corridors</title>
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link type="text/css" href="../../localsite/css/neighborhood.css" rel="stylesheet" />
+<link rel="icon" type="image/x-icon" href="../../localsite/img/logo/neighborhood-icon.png" />
+<meta name="description" content="In the Yard - Proposal for moving freight rail and car traffic underground at Husley Yard">
+<meta name="keywords" content="Beltline, Hulsey Yard, CSX, Atlanta, Freight Rail, Amtrak">
+
+<!--
+Proposal for moving rail and car traffic underground at Husley Yard
+To provide tree-lined paths, woonerfs, bikeways surrounded by expansive park space, the designers of the new Hulsey Yard could move both trains and fast cars underground by including three 24 foot wide covered-trenches running east-west below the yard. View details and videos:
+http://model.earth/play/outdoors/
+
+At either end of the yard, the three dual-level trenches could merge into one larger trench containing the 3 rail lanes under below grade 6 car lanes. This approach would eliminate traffic congestion on DeKalb Avenue while connecting communities all the way from Atlanta to Decatur.
+-->
+
+<link rel="stylesheet" href="../../localsite/css/swiper.min.css">
+
+<script src="../../localsite/js/jquery/zepto.min.js"></script>
+<script src="../../localsite/js/neighborhood.js"></script>
+
+<style>
+    .mainFont {
+          --x-height-multiplier: 0.375;
+          --baseline-multiplier: 0.17;
+          font-family: "medium-content-serif-font",Georgia,Cambria,"Times New Roman",Times,serif;
+          letter-spacing: .01rem;
+          font-weight: 100;
+          font-style: normal;
+          font-size: 21px;
+          line-height: 1.58;
+          letter-spacing: -.003em;
+          -webkit-font-smoothing: antialiased;
+    }
+    h1 {
+      line-height: 1.3;
+      font-size: 40px;
+      font-weight:350;
+    }
+    .content {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin:0 auto;
+        max-width: 1000px;
+    }
+    .textContent {
+      margin-left:30px;
+    }
+    @media (max-width: 800px) {
+      .textContent {
+        margin-left:0px;
+      }
+    }
+</style>
+
+<style>
+  /*
+  html, body {
+    position: relative;
+    height: 100%;
+  }
+  body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+  */
+
+  .textMargin {
+    margin:20px 20px 30px 30px;
+  }
+
+  /* Also reside in dsi */
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+    max-height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .swiper-slide {
+    text-align: center;
+    background: #fff;
+    /* Center slide text vertically, and horizontally */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+  }
+  .swiper-slide img {
+
+  }
+  :focus {
+      outline-width: 0px;
+  }
+  /* Additions */
+  .swiper-slide .title {
+    font-size: 41px;
+    font-weight: 100;
+    font-family: "Helvetica Neue", Helvetica, "Lato", sans-serif;
+  }
+  .swiper-slide .subtitle {
+    font-size: 21px;
+    font-family: "Helvetica Neue", Helvetica, "Lato", sans-serif;
+  }
+  .swiper-slide .text {
+    font-size: 14px;
+    max-width: 400px;
+    line-height: 1.3;
+  }
+  /* Overrides */
+  .swiper-container-vertical>.swiper-pagination-bullets {
+      /* Removes centering alignment which is skewed by quantity */
+      -webkit-transform: translate3d(0,-0%,0);
+      transform: translate3d(0,-0%,0);
+  }
+  .swiper-pagination-bullet {
+      width: 12px;
+      height: 12px;
+      display: inline-block;
+      border-radius: 100%;
+      background: #ccc;
+      opacity: .8;
+      /* margin: 10px 0 !important; */
+      margin: 12px 10px !important;
+  }
+  .swiper-pagination-bullet-active {
+      opacity: 1;
+      background: #fefefe;
+      /* box-shadow: 0px 0px 2px rgba(0,0,0,0.2); */
+      background: #fff;
+      border: 2px solid #eee;
+      width: 8px;
+      height: 8px;
+      box-shadow: 0px 0px 1px rgba(256,250,250,0.5);
+  }
+  @media (max-width: 799px) {
+    .swiper-pagination-bullet {
+      width: 18px;
+      height: 18px;
+    }
+    .swiper-pagination-bullet-active {
+      width: 14px;
+      height: 14px;
+    }
+  }
+  .swiper-button-prev {
+      background-image: url(../../img/plyr/arrow-prev.png) !important;
+      left: -18px;
+  }
+  .swiper-button-prev:hover {
+      background-image: url(../../img/plyr/arrow-prev-hover-blue.png) !important;
+  }
+  .swiper-button-next {
+      background-image: url(../../img/plyr/arrow-next.png) !important;
+      right: -18px;
+  }
+  .swiper-button-next:hover {
+      background-image: url(../../img/plyr/arrow-next-hover-blue.png) !important;
+  }
+  .swiper-button-next, .swiper-button-prev {
+      background-size: 57px 57px;
+      width: 100px;
+      height: 100px; 
+  }
+  .swiper-container-vertical>.swiper-pagination-bullets {
+    right:auto;
+    left:12px;
+    top:50px;
+  }
+  .box {
+    text-align: left;
+    position: absolute;
+    left: 80px;
+    top: 90px;
+    background-color: rgba(250,250,256,.85);
+    padding: 30px 20px 12px 30px;
+    overflow: scroll;
+    /* border: 8px solid #777; */
+    max-height: 74%;
+  }
+  .box-right {
+    left:auto;
+    right:50px;
+  }
+</style>
+
+<!-- https://github.com/sampotts/plyr -->
+<style>
+  .container {
+    margin: 0px auto;
+    width:100%;
+    height:100%;
+  }
+  .pictextholder {
+    margin: 0 40px 40px 40px;
+    max-width: 2000px;
+  }
+  .pictext {
+    font-family:"Lato", sans-serif;
+    font-size:15px;
+    font-color:#333;
+    font-weight:400;
+  }
+  .bigtitle {
+    position: absolute; left:40px; top:72px; font-size: 70px;
+  }
+  .alignleft {
+    float:right; margin-left:30px; margin-bottom:4px; max-width:600px;
+  }
+  @media (max-width: 800px) {
+    .pictextholder {
+      margin-left:20px;
+    }
+    .bigtitle {
+      position: relative;
+      top:20px;
+      margin-bottom: 10px;
+    }
+    .alignleft {
+      float:none;
+      margin-left:0px;
+    }
+  }
+</style>
+<!--
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+-->
+
+<link rel='stylesheet' href='../../css/plyr.css'>
+<script src='../../js/polyfill.min.js?features=es6,Array.prototype.includes,CustomEvent,Object.entries,Object.values,URL'></script>
+<script src='../../js/plyr.min.js'></script>
+
+<!-- Plyr resources and browser polyfills are specified in the pen settings -->
+<!--
+<script src='https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,Array.prototype.includes,CustomEvent,Object.entries,Object.values,URL'></script>
+<script src='https://unpkg.com/plyr@3'></script>
+-->
+
+  
+
+
+</head>
+<body>
+<div id="header" style="display:none"></div>
+  <div style="height:60px"></div>
+  
+  <div style="position: relative;">
+    <div class="bigtitle">Hulsey Yard</div>
+    <a href="img/2019/Screenshot__75_.webp"><img src="img/2019/Screenshot__75_.webp" style="width:100%"></a>
+  </div>
+
+<div class="pictext content">
+  Rendering by <a href="https://www.lordaecksargent.com/">Lord Aeck Sargent</a>
+  <br><br>
+</div>
+
+<div>
+
+<div class="content">
+  <div class="textContent mainFont">
+   
+   <h1>Atlanta Cut-and-Cover Freight Rail Proposal</h1>
+
+   <p>
+     <b>A shovel-ready project that fills the economy’s deep infrastructure needs while creating green jobs that help solve Atlanta's traffic dilemma.</b>
+    </p>
+   <!--
+   <a href="https://atlanta.curbed.com/2020/2/21/21147228/atlanta-csx-hulsey-yard-activation-masterplan-transit">Curbed Exclusive: CSX to reactivate Hulsey Yard</a><br><br>
+    -->
+    Spring 2020 - With the transition to a new 
+    <a href="https://www.csx.com/index.cfm/customers/value-added-services/product-transloading-and-distribution/TRANSFLO/">TRANSFLO</a> facility at Hulsey Yard, CSX will no longer need the entire yard. The four surrounding neighborhood associations have requested 3 new crossing at Hulsey Yard. A new infrastructure plan created with the city and state to move rail into covered trenches could increase land values while significantly improving travel times and safety along the DeKalb Ave train corridor. 
+
+
+    <!--
+    The return of CSX freight operations to Hulsey Yard could provide an opportunity to start trench work at Hulsey Yard while creating an in-town maker space with fast shipping of custom high-tech products.
+
+    Retaining portions of Hulsey as an active covered freight yard would be a smart move for Atlanta if the city gets serious about moving truck and fast traffic off the surface. 
+    -->
+   <br><br>
+    
+   
+    
+     
+   <b>CSX Cut-and-Cover from Downtown to Decatur</b> - A 1% rail incline could start downtown at The Gulch to move the CSX freight rail lines underground in 50 foot deep cut-and-cover trenches. From the east side of the 75/85 freeway, trucks and through-traffic could enter the trench above the rail route. At Hulsey Yard, the covered route could split into two narrower trenches to allow for tree canopy above.  
+
+   To accomodate the lowered rail level, the freeway and the Decatur Street overpass could be raised where the dip in the freeway currently occurs (see <a href="#freeway">freeway exit rendering</a>). East-bound car lanes and two-way shuttle/bike lanes could be located above the covered trenches on the south side of the MARTA line. 
+   <!--
+    Two west-bound lanes of DeKalb Ave could be elevated over the Beltline crossing to be level with the new storefront steetscape. 
+
+   On the northeast side of Krog Tunnel, ramps to and from DeKalb Ave could be offset by 20 feet to allow the north entrance of Krog Tunnel to remain visible.
+    -->
+   <br><br>
+
+   
+   <!--
+   <a href="img/trench/cross-section.jpg"><img src="img/trench/cross-section.jpg" style="width:100%"></a><br>
+    -->
+   Trucks and autonomous vehicles could travel below the surface over freight rail in a cut-and-cover trench.  A turn-in from I75/I85 could eliminate truck traffic on Boulevard. 
+    A trench exit by the Edgewood Retail District could eliminate trucks on Edgewood.<br><br>
+
+   <a href="https://discuss.amtraktrains.com/threads/nashville-to-atlanta-line.76934/">From a post by an area train conductor</a>: 
+   If Norfolk Southern, CSX and Amtrak share their rails, then trains from the south (C of Ga NS and A&WP CSX) could also access Hulsey as one downtown station. "The new connection at Howell from southbound NS track 1 (present track Amtrak uses) to CSX could eliminate the freight train delays to the Crescent. That might give CSX and NS an incentive to follow this possibility. Connections have been severed at Howell and would need restoring to access NS (SOU) tracks both ways."<br><br>
+
+  A portion of the <a href="https://www.csx.com/index.cfm/customers/value-added-services/product-transloading-and-distribution/TRANSFLO/">CSX TRANSFLO facility</a> could reside below the side spur in a covered workarea with parking located under the Beltline rail route depicted below. The historic roundhouse location area below could be an excellent location for a future Amtrak train&nbsp;station constructed of mass timber.<br><br>
+
+  
+
+    
+
+
+
+  </div>
+  
+
+</div>
+
+  
+
+   
+   
+
+
+   <a href="img/2019/Screenshot__76_.webp"><img src="img/2019/Screenshot__76_.jpg" style="width:100%"></a><br>
+
+  <div class="pictext content">
+  <!--
+    https://www.buildingenclosureonline.com/articles/87139-future-proof-train-station-made-with-clt
+  -->
+  Sketch by <a href="https://www.lordaecksargent.com/">Lord Aeck Sargent</a> from  
+  <a href="https://hulseymasterplan.com/">Hulsey Yard Master Plan</a> illustrating a large park and adjacent development similar to the "Roundhousee Park" framework plan. This "birds eye" view over Reynoldstown (foreground) looks north toward Inman Park.<br><br>
+  </div>
+  <br><br>
+
+
+
+</div>
+
+
+
+<div class="content">
+
+  
+
+  <div class="hidemobile alignleft">
+
+    <a href="img/trench/canada-line-cut-and-cover-tunnel-construction.jpg"><img src="img/trench/canada-line-cut-and-cover-tunnel-construction.jpg" style="width:100%;max-width:350px"></a><br>
+    Narrow trenches in Vancouver allow for tree canopy<br>
+    and roadways over cut-and-cover freight rail routes.
+    
+    <br><br><br>
+
+    <div style="font-size:18px">
+    Top-Down Construction
+    </div>
+    <a href="http://www.railsystem.net/cut-and-cover/"><img src="img/trench/trench-top-down-construction.png" style="width:100%;max-width:350px"></a><br>
+
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+    <a href="http://www.railsystem.net/cut-and-cover/">Rail System Cut-and-Cover</a>
+
+     <br><br>
+
+    <!--
+    <iframe class="hideMobile" src="https://discordapp.com/widget?id=357565506980675604&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+    -->
+  </div>
+
+  <a name="freeway"></a>
+
+  <div class="textContent" style="overflow:auto;padding-right:50px; min-width:400px">
+    <h2 style="font-size:30px">Reenvisioning Atlanta's 
+    <span style="white-space:nowrap">
+    Rail Corridors</span></h2>
+
+
+
+      <div class="mainFont">
+        <p>
+          <!--
+          Now that Hulsey Yard is no longer a freight yard, the city has an opportunity to move freight trains underground from downtown to Decatur. 
+
+          With the support of companies interested in creating communities with improved multimodal traffic flow and more walkable spaces, n
+          -->
+          Narrow trenches could be used to move CSX freight trains underground from Downtown Atlanta to Decatur to improve multimodal traffic flow while creating walkable street frontages on the south side of MARTA.  
+
+          Similar undergrounding from Downtown to McDonough Ave could include the creation of a new town center by repurposing the <a href="https://www.bop.gov/locations/institutions/atl/" target="fedprison">Historic Federal Prison</a> to usher forth a  renaissance in South&nbsp;Atlanta.</p>
+        
+        <p>Initial trench work at the 70-acre Hulsey Yard could occur on the south side of the yard to avoid disrupting train traffic during construction.  Narrow train trenches would allow for canopy tree coverage of roads and paths above. 
+        The trench height could range from 42 to 55 feet, with the lower 30 feet for freight rail and the upper 20 feet for car overpasses and truck routes below the surface area (at the level of Krog Tunnel). Cars could thereby enter below-ground parking without disrupting shuttles, bikes, and local shoppers traveling east-west above.</p>
+
+
+        <!--
+        <p>On the south side of the MARTA rail, where the CSX rail currently resides, 
+          a new level route for free mobile storefront shuttles and shared micro-mobility vehicles could connect area residents to downtown and Decatur while allowing MARTA rail to focus on fast throughput. 
+        </p>
+
+        <p>The lower elevation of the rail trenches would bring water to Hulsey, which could be pumped above ground into a series of lakes using solar energy. By storing the water in a lake on a hill during the day, energy could be generated at night. <a href="https://fungi.com/blogs/articles/mycofiltration-for-urban-storm-water-treatment-receives-epa-research-and-development-funding" target="mycofiltration">Mycofiltration</a> could clean storm water for use in a natural swimming pool with a view of the city.  An adjacent amphitheater on the northeast side of the hill could also face the downtown skyline.
+        </p>
+        -->
+
+        
+
+
+
+
+        
+        <div style="display:none">
+          <h3>Olmstead's Urban Parkway design as inspiration for designing Complete Urban Streets</h3>
+
+          <p>
+          Organizing the complexity of transit modes using Olmstead's 3-roadway design, which is today referred to as a multi-way boulevard. Side roadways are traffic-calmed, suitable for bikes.
+
+          The return of "Prominading" - being seen on the street in large gatherings.
+
+          <!-- 
+          Residents declared a national scenic landmark and thereby avoided the national uniform standards.
+          Ocean Parkway - Brooklyn to Coney Island
+          210 ft wide
+          -->
+
+          MacDonald, Elizabeth (2014) “Pleasure Drives and Promenades: The Olmsted Parkway Idea as Inspiration for Today’s Complete Streets”, 34-minute video from GT 2014-06-02 <a href="https://smartech.gatech.edu/handle/1853/52012">Olmsted Symposium</a>
+
+          </p>
+        </div>
+
+        <br>
+
+      </div>
+
+    </div>
+
+</div>
+
+
+<div class="content">
+  <div class="textContent mainFont">
+
+    <a href="img/freeway.jpg"><img src="img/freeway.jpg" style="width:100%"></a><br>
+
+    <p>The freight rail bridge at the I75/I85 freeway could be replaced with a rail tunnel, while raising the current dip in the freeway. The Decatur Street freeway bridge could be raised and additional connecting bridges (or a freeway cap) could be added for bikes, shuttles and cars once the freight rail and truck routes are moved into narrow trenches.
+    </p>
+
+    <p>
+      With this approach, Krog Tunnel would have a traffic light in the middle of the tunnel. Graffiti artists could paint a portion of the truck tunnel to make up for lost painting space at the intersection within the tunnel. 
+      Similar covered intersections would occur at Hill Street and Grant Street. Boulevard would go over the top of the yard. 
+    </p>
+
+    <p>
+      The existing freeway entrance ramp from MLK could include an entrance to the covered truck route which would descend to the right. A north-bound freeway access route (pink above) could travel over the truck route to a freeway access ramp on the north side of Decatur Street.  Long-term, a northbound truck route could use a 200 meter tunnel from the covered trench to the freeway. Short-term, westbound trucks could exit the covered trench route at Hill Street to access the northbound Decatur Street ramp.
+    </p>
+    <br>
+ 
+
+
+<b>Avoiding a Long Trench for Beltline Rail adjacent to Krog Tunnel</b><br>
+
+  <!--
+  As an alternative to a block-long Beltline tunnel at Hulsey, CSX could move the north 2 of 3 freight rail tracks to the center of Hulsey Yard. 
+
+  cross DeKalb Ave at street level before going under a small rail bridge.
+
+  One of the south rails would be the side spur for TRANSFLO loading. 
+
+  
+
+  -->
+
+  By elevating one lane of DeKalb Ave at Krog Tunnel,
+  the Beltline rail could go under the existing CSX rail in the short-term 
+  without using a deep tunnel under DeKalb Avenue. 
+
+  The Beltline could continue straight in a trench under a rail bridge before emerging in the middle of the yard.  This approach would avoid the bottleneck of Krog Tunnel and would avoid the steep incline that would occur if the Beltline route went under DeKalb avenue.
+  <br><br>
+
+<a href="img/2019/2019-DeKalb-Eastward.jpg"><img src="img/2019/2019-DeKalb-Eastward.jpg" style="width:100%"></a><br>
+  <div class="pictext">
+    Looking east toward Krog Tunnel - An elevated eastbound lane could be level with a future Husley Yard streetscape. The eastbound lane could eventually reside on the south side of the elevated Marta rail once the CSX rail is moved into a cut-and-cover trench.
+  </div><br>
+
+
+
+      <!--
+      <a href="img/DeKalb-at-Beltline.jpg"><img src="img/DeKalb-at-Beltline.jpg" style="width:100%"></a>
+      -->
+      <a href="img/2019/elevated.jpg"><img src="img/2019/elevated.jpg" style="width:100%"></a><br>
+
+<div class="pictext">
+The eastbound middle lane (light blue above) could provide a right-turn lane into Cabbagetown under the elevated lane. A speed-absorbing barrier could be used to protect pedestrians (red dots above). Local eastbound traffic could continue around the incline-island to access northbound Krog&nbsp;Street.<br><br> 
+</div>
+
+<a href="img/trench/cross-section.jpg"><img src="img/trench/cross-section.jpg" style="width:100%"></a><br>
+<div class="pictext">
+Later the elevated lane could be part of a seamless streetscape over underground freight.
+</div>
+<br>
+
+<div>
+<a href="img/2019/DeKalb-Through-Way.jpg"><img src="img/2019/DeKalb-Through-Way.jpg" style="width:100%" style="margin-bottom:0px"></a>
+</div>
+
+<div class="pictext">
+Ideally the east-west bike path would be separate from both the Beltline sidewalk and Cabbagetown roadway. <a href="img/2019/DeKalb-Through-Way.ai">Illustrator file</a>
+</div>
+<br>
+
+<div>
+  <a href="img/2019/2019-master-plan-combo-wide.jpg"><img src="img/2019/2019-master-plan-combo.jpg" style="width:100%"></a><br>
+    Three at-grade crossing and Beltline underpass. <a href="img/2019/2019-master-plan-combo-wide.jpg">Expand view</a>&nbsp; Sources: <a href="https://hulseymasterplan.com/master-plan">Hulsey Master Plan</a>
+    and <a href="https://atlanta.curbed.com/2019/11/1/20942413/hulsey-yard-atlanta-beltline-masterplan-study-committee">Curbed</a>
+    <br><br>
+</div>
+
+<!--
+<a href="img/freeway_1.jpg"><img src="img/freeway_1.jpg" style="width:100%"></a><br><br>
+-->
+
+Results from <a href="https://hulseymasterplan.com/pop-up-studio">2019 pop-up studio community survey</a> 
+provided by the Lord Aeck Sargent:<br>
+
+<a href="img/2019/HY_Community_Character_Highlights_Page_1.jpg"><img src="img/2019/HY_Community_Character_Highlights_Page_1.jpg" style="width:100%"></a><br><br>
+<a href="img/2019/HY_Community_Character_Highlights_Page_2.jpg"><img src="img/2019/HY_Community_Character_Highlights_Page_2.jpg" style="width:100%"></a><br><br>
+<a href="img/2019/HY_Connectivity_Highlights.jpg"><img src="img/2019/HY_Connectivity_Highlights.jpg" style="width:100%"></a><br><br>
+
+<a name="beltline"></a>
+
+<!--
+<h2>Beltline Connection to Hulsey Yard</h2>
+
+The current plan seems to be to run the Beltline rail under 
+DeKalb Ave without changing DeKalb's elevation. 
+The Beltline would have a much steeper hill to climb to go over Krog Tunnel. 
+Keeping DeKalb Avenue's elevation unchanged would requery a long open trench for the Beltline rail on the north side of Dekalb, not very elegant.  Also, dropping the Beltline far enough to go under DeKalb's existing elevation would intersect where the CSX rail would be lowered to later, not good. So best to create a plan now that incorporates where the underground freight rail could reside later.<br>
+-->
+
+<div style="display:none">
+
+• New north-south through street connecting Delta Place to Chester Avenue<br>
+• New north-south through street connecting Waddell Street to Pearl Street<br>
+• New north-south street connecting new development to Dekalb Avenue (near Bradley Street on the western portion of the site)<br><br>
+
+<h2>Elevated DeKalb Through-Way Concept</h2>
+
+<div style='font-size: 10pt'>
+Prepared by Loren Heyns, Oct 2019<br><br>
+</div>
+
+The south two lanes of DeKalb Ave at Krog Tunnel (left side below) could be elevated for a couple blocks to allow through-traffic to go over the Beltline rail, without digging a deep north-south Beltline trench.<br><br>
+
+
+<a href="img/2019/DeKalb-at-Beltline.jpg"><img src="img/2019/DeKalb-at-Beltline.jpg" style="width:100%"></a><br>
+
+<h4>Phase 1: Raising two lanes of DeKalb Ave at Krog Tunnel</h4>
+
+The Beltline would travel under the current CSX rail west of Krog Tunnel.
+A lower, local route the existing street level would be accessible from Krog Street. A new vehicle 
+and bike route would reside adjacent to the Beltline. 
+A new traffic light would be added at the local Beltline crossing.  
+The two-way lower street would turn into one-way west of the Beltline to merge with the through-way. (Image above)<br><br>
+
+An incline would start under the elevated south two lanes of DeKalb Ave to go under the existing CSX rail.
+After passing under the CSX rail, the Beltline would climb a hill and turn east to go over Krog Tunnel.
+Southbound car and bike traffic into Cabbagetown would use the same trench, but the west side of the trench would connect straight into Cabbagetown rather than going up the hill.<br><br>
+
+The northeast side of Krog tunnel would have an eastbound access route that merges with the elevated DeKab through-way as it returns to the existing street level. 
+The elevated DeKalb Through Way would be 20" away from Krog Tunnel, so the historic signage area would be visible from above and below.<br><br>
+
+
+
+<h4>Phase 2: Lowering CSX Rail 50 Feet</h4>
+
+The rail would run under Krog Tunnel and the 75/85 freeway. 
+No changes would be needed to the routes described above when lowering the CSX Rail 
+to create a new pedestrian-focused streetscape from Downtown to Decatur.<br><br>
+
+<a href="https://www.inmanpark.org/index.php?option=com_dailyplanetblog&view=entry&year=2016&month=09&day=27&id=31:the-elegant-beltline-solution">Beltline trench alignment - 2016 by Klaus Roesch</a><br><br>
+
+
+</div>
+
+
+<!--
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XI5frPV58tY?start=483" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+-->
+
+<!--
+<h2>Natural Swimming Pools</h2>
+
+<img src="img/2019/natural-swimming-area-and-lap-pool.jpg" style="width:100%"><br>
+In July 2015, Minneapolis welcomed the first chemical-free, public swimming pool in the United States. Designed by local firm Landform, the 16,800-square-foot natural swimming area and lap pool (and the 4,500-square-foot wading pool) are naturally treated by a 16,250-square-foot "regeneration basin" with over 7,600 plants of 36 different species. <a href="https://www.dwell.com/article/natural-swimming-pools-chlorine-free-f6b464e5">More</a><br><br>
+
+
+<h2>Mycelium for Removing Toxins from Greyfields</h2>
+
+"Mycelium break down complex toxic chemicals into simple elements like hydrogen, carbon and oxygen molecules that can safely be cycled back into the ecosystem. For very complex molecules, the mycelium can separate it into smaller ones that other microbes can them break down. The mycelium accomplishes this by excreting various enzymes. While fungi cannot break down heavy metals found in soil, they can sequester them, essentially immobilizing them." - <a href="https://phenomenalfungi.com/blogs/news/cleaning-up-with-mushrooms">Source</a><br><br>
+-->
+
+    <a href="https://model.earth/community/localsite/rail/">Rubber and composite rail ties</a> reduce vibration. The 50 year lifespan of infinitely-recyclable railroad ties made from car tires and hard-to-recycle plastics avoids the burning of toxic creosote-treated ties. Neighbors could also request mining of any available granite beneath the yard using a quiet product like <a href="https://www.miningreview.com/top-stories/new-non-explosive-rock-breaking-product/">Crackem</a> or Expando. The extraction and sale of deep granite could provide a space for dirt from trench work, along with areas for water and material storage.
+    <br><br>
+
+
+          <p><a href="https://hulseymasterplan.com/">Hulsey Yard Master Plan</a> - Neighborhood Coalition Website</p>
+
+          <p><a href="../glenwood/complete-streets/">Glenwood Complete Streets</a> - Transit Lanes and Family-Friendly Biking</p>
+
+          <p><a href="../../atlanta/grantpark/parking-deck/">Grant Park Gateway</a> - Evolution of the Parking Deck at Zoo Atlanta</p>
+
+          <p><a href="../../localsite/mobile-storefronts/">Mobile Storefronts</a> - On Demand Retail / Toyota e-Palette</p>
+
+          
+
+          <!--
+          <a href="http://bit.ly/safe-beltline">Safe Beltline</a> - Safe routes for eBikes and eScooters along the Betline<br><br>
+          -->
+
+          <!--
+          <p><a href="../grantpark/history">Grant Park History Center</a> - Pathway Proposal for Southeast Corner of Park</p>
+          -->
+          
+          <br>
+    </div>
+    <!-- end textContent mainFont -->
+          
+
+    <div class="textContent">
+      <div id="disqus_thread"></div>
+      <script>
+          /**
+           *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT 
+           *  THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR 
+           *  PLATFORM OR CMS.
+           *  
+           *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: 
+           *  https://disqus.com/admin/universalcode/#configuration-variables
+           */
+          /*
+          var disqus_config = function () {
+              // Replace PAGE_URL with your page's canonical URL variable
+              this.page.url = PAGE_URL;  
+              
+              // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+              this.page.identifier = PAGE_IDENTIFIER; 
+          };
+          */
+          
+          (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+              var d = document, s = d.createElement('script');
+              
+              // IMPORTANT: Replace locally with your forum shortname!
+              s.src = 'https://locally.disqus.com/embed.js';
+              
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+          })();
+      </script>
+      <noscript>
+          Please enable JavaScript to view the 
+          <a href="https://disqus.com/?ref_noscript" rel="nofollow">
+              comments powered by Disqus.
+          </a>
+      </noscript>
+    </div>
+
+</div>
+<br>
+
+
+
+
+  <!-- Swiper -->
+  <!--
+    Notes:
+    Set the height:100% on div within swiper-slide
+    text-align:left; overflow:scroll; 
+
+    HIDDEN UNTIL VIDEO FIXED IN BRAVE BROWSER
+  -->
+  <div class="swiper-container" style="display:none">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide" data-hash="hulsey-critical-mass">
+        <img class="swiper-lazy" data-src="img/hulsey-critical-mass.jpg">
+        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+        <div class="box">
+          <div class="title">Hulsey Yard</div>
+          <div class="subtitle" data-swiper-parallax="-200">Critical Mass <span style="white-space:nowrap;">"In the Yard"</span></div>
+          <p style="max-width:500px; line-height: 1.2em"><b>Smart Mobility</b> - Local residents are gathering input for a family-friendly bikeway with park space, high density residential, 
+            one or more corporate headquarters to drive the effort to create more greenspace, with smooth and uninterrupted <a href="../../localsite/mobile-storefronts/" style="white-space: nowrap;">mobile storefront</a> routes for free commercial shuttle service to downtown and Decatur, and improved car and train travel throughout the corridor.
+          </p>
+        </div>
+      </div>
+
+      <div class="swiper-slide" data-hash="criticalmass">
+        <div class="container">
+          <div id="player6" data-plyr-provider="youtube" data-plyr-embed-id="CZhbFT3qhvo"></div>
+        </div>
+        <script>
+            player6 = new Plyr('#player6', {autopause:'true',hideControls:'true'});
+            window.player = player6;
+            //window.player.on("ready", function() {
+            //    alert('ready')
+            //    //this.seek(120);
+            //    window.player.currentTime = 200;
+            //    //this.currentTime = 120;
+            //});
+        </script>
+      </div>
+
+      <!--
+      <div class="swiper-slide" data-hash="hulsey-streetscape">
+        <img class="swiper-lazy" data-src="img/harneytrail.png">
+        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+        <div class="box">
+          <div class="title">Harney Trail</div>
+          <div class="subtitle" data-swiper-parallax="-200">Path and Bikeway</div>
+          <div class="text" data-swiper-parallax="-100">
+            <p>A dual-level rail and car trench could be located below a slow moving roadway, another one could be below an adjacent woonerf route, and a third could be below buildings adjacent to covered parking.
+            This narrow trench approach would allow 
+            tree canopies and buildings to span the 24 foot covered trenches while providing two lanes of car traffic below street level.<br><br>
+
+             <a href="?compare#rail-trench">Trench Comparison</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      -->
+      
+      <div class="swiper-slide" data-hash="rail-trench">
+        <div class="container">
+          <div id="player10" data-plyr-provider="youtube" data-plyr-embed-id="XKwEXMsSV98"></div>
+        </div>
+        <script>
+            player = new Plyr('#player10', {autopause:'true',hideControls:'true'});
+            window.player = player;
+        </script>
+        <div class="box" style="left:auto;right:60px">
+          <div class="title">Narrow Trenches</div>
+          <div class="subtitle" data-swiper-parallax="-200">Not this wide-style used in Los Angeles</div>
+          <div class="text" data-swiper-parallax="-100">
+            <p style="margin-bottom:0px">
+
+              Narrow trenches allow for canopy tree coverage, unlike the wide trenche below in Los Angeles.<br><br>
+
+              
+
+            <!--<br>
+            <span style="font-size:12px">
+            A narrow trench in British Columbia, Canada.
+            </span>
+            -->
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide" data-hash="hulsey">
+        <div class="container">
+          <div id="player5" data-plyr-provider="youtube" data-plyr-embed-id="KnJb6V9zLlo"></div>
+        </div>
+        <script>
+            player = new Plyr('#player5', {autopause:'true',hideControls:'true'});
+            window.player = player;
+        </script>
+      </div>
+
+      <div class="swiper-slide" data-hash="tilford-yard">
+        <div class="container">
+          <div id="player1" data-plyr-provider="youtube" data-plyr-embed-id="oV2_YtrqgyQ"></div>
+        </div>
+        <script>
+            player = new Plyr('#player1', {autopause:'true',hideControls:'true'});
+            window.player = player;
+        </script>
+        <div class="box">
+          <div class="title">Tilford Yard</div>
+          <div class="subtitle" data-swiper-parallax="-200"></div>
+          <div class="text" data-swiper-parallax="-100">
+            <p>Located northwest of Atlanta, Tilford Yard will<br>
+              also be transformed in the years ahead.<br><br>
+
+            <a href="https://hulseymasterplan.com/">Continue to Hulsey Master Plan</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+
+
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- Navigation -->
+    <!--
+    <div class="swiper-button-next swiper-button-white"></div>
+    <div class="swiper-button-prev swiper-button-white"></div>
+    -->
+    <div class="swiper-button-prev swiper-button-white" style="bottom:15px !important"></div>
+    <div class="swiper-button-next swiper-button-white" style="bottom:15px !important"></div>
+
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="../../localsite/js/swiper/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      /* mousewheel: true, */ /* In addition to hold and swipe. Jumps to quick and bypasses elements below images. */
+      /* Issue: the last slide is also preloaded. */
+      slidesPerView: 'auto',
+      lazy: {
+        loadPrevNext: true,
+      },
+      /* preloadImages: false, No difference */
+      loop: true,
+      /* effect: 'fade', */
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      hashNavigation: {
+        watchState: true,
+      },
+      keyboard: {
+        enabled: true,
+        onlyInViewport: false
+      },
+
+      direction: 'horizontal',
+      /*
+      freeMode: true,
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+      */
+    });
+
+    // Fast forward: https://codepen.io/sampotts/pen/jARJYp
+    //player.play();
+  </script>
+
+</body>
+</html>
