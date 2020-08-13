@@ -18,8 +18,6 @@ http://model.earth/play/outdoors/
 At either end of the yard, the three dual-level trenches could merge into one larger trench containing the 3 rail lanes under below grade 6 car lanes. This approach would eliminate traffic congestion on DeKalb Avenue while connecting communities all the way from Atlanta to Decatur.
 -->
 
-<link rel="stylesheet" href="../../localsite/css/swiper.min.css">
-
 <script src="../../localsite/js/jquery/jquery-1.12.4.min.js"></script>
 <script src="../../atlanta/js/navigation.js"></script>
 
@@ -55,206 +53,17 @@ At either end of the yard, the three dual-level trenches could merge into one la
         margin-left:0px;
       }
     }
-</style>
-
-<style>
-  /*
-  html, body {
-    position: relative;
-    height: 100%;
-  }
-  body {
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
-  }
-  */
-
-  .textMargin {
-    margin:20px 20px 30px 30px;
-  }
-
-  /* Also reside in dsi */
-  .swiper-container {
-    width: 100%;
-    height: 100%;
-    max-height: 700px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .swiper-slide {
-    text-align: center;
-    background: #fff;
-    /* Center slide text vertically, and horizontally */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-    overflow: hidden;
-    position: relative;
-  }
-  .swiper-slide img {
-
-  }
-  :focus {
-      outline-width: 0px;
-  }
-  /* Additions */
-  .swiper-slide .title {
-    font-size: 41px;
-    font-weight: 100;
-    font-family: "Helvetica Neue", Helvetica, "Lato", sans-serif;
-  }
-  .swiper-slide .subtitle {
-    font-size: 21px;
-    font-family: "Helvetica Neue", Helvetica, "Lato", sans-serif;
-  }
-  .swiper-slide .text {
-    font-size: 14px;
-    max-width: 400px;
-    line-height: 1.3;
-  }
-  /* Overrides */
-  .swiper-container-vertical>.swiper-pagination-bullets {
-      /* Removes centering alignment which is skewed by quantity */
-      -webkit-transform: translate3d(0,-0%,0);
-      transform: translate3d(0,-0%,0);
-  }
-  .swiper-pagination-bullet {
-      width: 12px;
-      height: 12px;
-      display: inline-block;
-      border-radius: 100%;
-      background: #ccc;
-      opacity: .8;
-      /* margin: 10px 0 !important; */
-      margin: 12px 10px !important;
-  }
-  .swiper-pagination-bullet-active {
-      opacity: 1;
-      background: #fefefe;
-      /* box-shadow: 0px 0px 2px rgba(0,0,0,0.2); */
-      background: #fff;
-      border: 2px solid #eee;
-      width: 8px;
-      height: 8px;
-      box-shadow: 0px 0px 1px rgba(256,250,250,0.5);
-  }
-  @media (max-width: 799px) {
-    .swiper-pagination-bullet {
-      width: 18px;
-      height: 18px;
-    }
-    .swiper-pagination-bullet-active {
-      width: 14px;
-      height: 14px;
-    }
-  }
-  .swiper-button-prev {
-      background-image: url(../../img/plyr/arrow-prev.png) !important;
-      left: -18px;
-  }
-  .swiper-button-prev:hover {
-      background-image: url(../../img/plyr/arrow-prev-hover-blue.png) !important;
-  }
-  .swiper-button-next {
-      background-image: url(../../img/plyr/arrow-next.png) !important;
-      right: -18px;
-  }
-  .swiper-button-next:hover {
-      background-image: url(../../img/plyr/arrow-next-hover-blue.png) !important;
-  }
-  .swiper-button-next, .swiper-button-prev {
-      background-size: 57px 57px;
-      width: 100px;
-      height: 100px; 
-  }
-  .swiper-container-vertical>.swiper-pagination-bullets {
-    right:auto;
-    left:12px;
-    top:50px;
-  }
-  .box {
-    text-align: left;
-    position: absolute;
-    left: 80px;
-    top: 90px;
-    background-color: rgba(250,250,256,.85);
-    padding: 30px 20px 12px 30px;
-    overflow: scroll;
-    /* border: 8px solid #777; */
-    max-height: 74%;
-  }
-  .box-right {
-    left:auto;
-    right:50px;
-  }
-</style>
-
-<!-- https://github.com/sampotts/plyr -->
-<style>
-  .container {
-    margin: 0px auto;
-    width:100%;
-    height:100%;
-  }
-  .pictextholder {
-    margin: 0 40px 40px 40px;
-    max-width: 2000px;
-  }
-  .pictext {
-    font-family:"Lato", sans-serif;
-    font-size:15px;
-    font-color:#333;
-    font-weight:400;
-  }
-  .bigtitle {
-    position: absolute; left:40px; top:72px; font-size: 70px;
-  }
-  .alignleft {
-    float:right; margin-left:30px; margin-bottom:4px; max-width:600px;
-  }
-  @media (max-width: 800px) {
-    .pictextholder {
-      margin-left:20px;
-    }
     .bigtitle {
-      position: relative;
-      top:20px;
-      margin-bottom: 10px;
+      position: absolute; left:40px; top:72px; font-size: 60px; font-weight: 100;
     }
-    .alignleft {
-      float:none;
-      margin-left:0px;
+    @media (max-width: 800px) {
+      .bigtitle {
+        position: relative;
+        top:20px;
+        margin-bottom: 10px;
+      }
     }
-  }
 </style>
-<!--
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
--->
-
-<link rel='stylesheet' href='../../css/plyr.css'>
-<script src='../../js/polyfill.min.js?features=es6,Array.prototype.includes,CustomEvent,Object.entries,Object.values,URL'></script>
-<script src='../../js/plyr.min.js'></script>
-
-<!-- Plyr resources and browser polyfills are specified in the pen settings -->
-<!--
-<script src='https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,Array.prototype.includes,CustomEvent,Object.entries,Object.values,URL'></script>
-<script src='https://unpkg.com/plyr@3'></script>
--->
-
-  
-
 
 </head>
 <body>
@@ -279,12 +88,12 @@ At either end of the yard, the three dual-level trenches could merge into one la
    <h1>Atlanta Cut-and-Cover Freight Rail Proposal</h1>
 
    <p>
-     <b>A shovel-ready project that fills the economy’s deep infrastructure needs while creating green jobs that help solve Atlanta's traffic dilemma.</b>
+     <b>A shovel-ready project improving Atlanta traffic while creating green jobs</b>
     </p>
    <!--
    <a href="https://atlanta.curbed.com/2020/2/21/21147228/atlanta-csx-hulsey-yard-activation-masterplan-transit">Curbed Exclusive: CSX to reactivate Hulsey Yard</a><br><br>
     -->
-    Spring 2020 - With the transition to a new 
+    Summer 2020 - With the transition to a new 
     <a href="https://www.csx.com/index.cfm/customers/value-added-services/product-transloading-and-distribution/TRANSFLO/">TRANSFLO</a> facility at Hulsey Yard, CSX will no longer need the entire yard. The four surrounding neighborhood associations have requested 3 new crossing at Hulsey Yard. A new infrastructure plan created with the city and state to move rail into covered trenches could increase land values while significantly improving travel times and safety along the DeKalb Ave train corridor. 
 
 
@@ -298,7 +107,7 @@ At either end of the yard, the three dual-level trenches could merge into one la
    
     
      
-   <b>CSX Cut-and-Cover from Downtown to Decatur</b> - A 1% rail incline could start downtown at The Gulch to move the CSX freight rail lines underground in 50 foot deep cut-and-cover trenches. From the east side of the 75/85 freeway, trucks and through-traffic could enter the trench above the rail route. At Hulsey Yard, the covered route could split into two narrower trenches to allow for tree canopy above.  
+   <b>CSX Cut-and-Cover from Downtown to Decatur</b> - A 1% rail incline could start downtown at The Gulch to move the CSX freight rail lines underground into 50 foot deep cut-and-cover trenches. From the east side of the 75/85 freeway, trucks and through-traffic could enter the trench above the rail route. At Hulsey Yard, the covered route could split into two narrower trenches to allow for tree canopy above.  
 
    To accomodate the lowered rail level, the freeway and the Decatur Street overpass could be raised where the dip in the freeway currently occurs (see <a href="#freeway">freeway exit rendering</a>). East-bound car lanes and two-way shuttle/bike lanes could be located above the covered trenches on the south side of the MARTA line. 
    <!--
@@ -690,16 +499,187 @@ In July 2015, Minneapolis welcomed the first chemical-free, public swimming pool
 
 
 
+<!-- Swiper and Plyr -->
+<!--
+  Notes:
+  Set the height:100% on div within swiper-slide
+  text-align:left; overflow:scroll; 
+-->
 
-  <!-- Swiper -->
-  <!--
-    Notes:
-    Set the height:100% on div within swiper-slide
-    text-align:left; overflow:scroll; 
+<link rel='stylesheet' href='../../localsite/css/plyr.css'>
+<link rel="stylesheet" href="../../localsite/css/swiper.min.css">
+<script src='../../localsite/js/polyfill.min.js?features=es6,Array.prototype.includes,CustomEvent,Object.entries,Object.values,URL'></script>
+<script src='../../localsite/js/plyr.min.js'></script>
 
-    HIDDEN UNTIL VIDEO FIXED IN BRAVE BROWSER
-  -->
-  <div class="swiper-container" style="display:none">
+<!-- Plyr resources and browser polyfills are specified in the pen settings -->
+<!--
+<script src='https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,Array.prototype.includes,CustomEvent,Object.entries,Object.values,URL'></script>
+<script src='https://unpkg.com/plyr@3'></script>
+-->
+
+<style>
+  .textMargin {
+    margin:20px 20px 30px 30px;
+  }
+
+  /* Also reside in dsi */
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+    max-height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .swiper-slide {
+    text-align: center;
+    background: #fff;
+    /* Center slide text vertically, and horizontally */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+  }
+  .swiper-slide img {
+
+  }
+  :focus {
+      outline-width: 0px;
+  }
+  /* Additions */
+  .swiper-slide .title {
+    font-size: 41px;
+    font-weight: 100;
+    font-family: "Helvetica Neue", Helvetica, "Lato", sans-serif;
+  }
+  .swiper-slide .subtitle {
+    font-size: 21px;
+    font-family: "Helvetica Neue", Helvetica, "Lato", sans-serif;
+  }
+  .swiper-slide .text {
+    font-size: 14px;
+    max-width: 400px;
+    line-height: 1.3;
+  }
+  /* Overrides */
+  .swiper-container-vertical>.swiper-pagination-bullets {
+      /* Removes centering alignment which is skewed by quantity */
+      -webkit-transform: translate3d(0,-0%,0);
+      transform: translate3d(0,-0%,0);
+  }
+  .swiper-pagination-bullet {
+      width: 12px;
+      height: 12px;
+      display: inline-block;
+      border-radius: 100%;
+      background: #ccc;
+      opacity: .8;
+      /* margin: 10px 0 !important; */
+      margin: 12px 10px !important;
+  }
+  .swiper-pagination-bullet-active {
+      opacity: 1;
+      background: #fefefe;
+      /* box-shadow: 0px 0px 2px rgba(0,0,0,0.2); */
+      background: #fff;
+      border: 2px solid #eee;
+      width: 8px;
+      height: 8px;
+      box-shadow: 0px 0px 1px rgba(256,250,250,0.5);
+  }
+  @media (max-width: 799px) {
+    .swiper-pagination-bullet {
+      width: 18px;
+      height: 18px;
+    }
+    .swiper-pagination-bullet-active {
+      width: 14px;
+      height: 14px;
+    }
+  }
+  .swiper-button-prev {
+      background-image: url(../../localsite/img/plyr/arrow-prev.png) !important;
+      left: -18px;
+  }
+  .swiper-button-prev:hover {
+      background-image: url(../../localsite/img/plyr/arrow-prev-hover-blue.png) !important;
+  }
+  .swiper-button-next {
+      background-image: url(../../localsite/img/plyr/arrow-next.png) !important;
+      right: -18px;
+  }
+  .swiper-button-next:hover {
+      background-image: url(../../localsite/img/plyr/arrow-next-hover-blue.png) !important;
+  }
+  .swiper-button-next, .swiper-button-prev {
+      background-size: 57px 57px;
+      width: 100px;
+      height: 100px; 
+  }
+  .swiper-container-vertical>.swiper-pagination-bullets {
+    right:auto;
+    left:12px;
+    top:50px;
+  }
+  .box {
+    text-align: left;
+    position: absolute;
+    left: 80px;
+    top: 90px;
+    background-color: rgba(250,250,256,.85);
+    padding: 30px 20px 12px 30px;
+    overflow: scroll;
+    /* border: 8px solid #777; */
+    max-height: 74%;
+  }
+  .box-right {
+    left:auto;
+    right:50px;
+  }
+</style>
+
+<!-- https://github.com/sampotts/plyr -->
+<style>
+  .container {
+    margin: 0px auto;
+    width:100%;
+    height:100%;
+  }
+  .pictextholder {
+    margin: 0 40px 40px 40px;
+    max-width: 2000px;
+  }
+  .pictext {
+    font-family:"Lato", sans-serif;
+    font-size:15px;
+    font-color:#333;
+    font-weight:400;
+  }
+  .alignleft {
+    float:right; margin-left:30px; margin-bottom:4px; max-width:600px;
+  }
+  @media (max-width: 800px) {
+    .pictextholder {
+      margin-left:20px;
+    }
+    .alignleft {
+      float:none;
+      margin-left:0px;
+    }
+  }
+</style>
+  
+
+  <div class="swiper-container" style="displayX:none">
     <div class="swiper-wrapper">
 
       <div class="swiper-slide" data-hash="hulsey-critical-mass">
@@ -708,8 +688,7 @@ In July 2015, Minneapolis welcomed the first chemical-free, public swimming pool
         <div class="box">
           <div class="title">Hulsey Yard</div>
           <div class="subtitle" data-swiper-parallax="-200">Critical Mass <span style="white-space:nowrap;">"In the Yard"</span></div>
-          <p style="max-width:500px; line-height: 1.2em"><b>Smart Mobility</b> - Local residents are gathering input for a family-friendly bikeway with park space, high density residential, 
-            one or more corporate headquarters to drive the effort to create more greenspace, with smooth and uninterrupted <a href="../../localsite/mobile-storefronts/" style="white-space: nowrap;">mobile storefront</a> routes for free commercial shuttle service to downtown and Decatur, and improved car and train travel throughout the corridor.
+          <p style="max-width:500px; line-height: 1.2em">Local residents are driving the effort for bikeways and park space, high density residential and improved travel times throughout the corridor.
           </p>
         </div>
       </div>
@@ -827,7 +806,7 @@ In July 2015, Minneapolis welcomed the first chemical-free, public swimming pool
   </div>
 
   <!-- Swiper JS -->
-  <script src="../../localsite/js/swiper/swiper.min.js"></script>
+  <script src="../../localsite/js/swiper.min.js"></script>
 
   <!-- Initialize Swiper -->
   <script>
@@ -871,6 +850,7 @@ In July 2015, Minneapolis welcomed the first chemical-free, public swimming pool
     // Fast forward: https://codepen.io/sampotts/pen/jARJYp
     //player.play();
   </script>
+<!-- /Swiper and Plyr -->
 
 </body>
 </html>
