@@ -175,8 +175,8 @@ h3 {
 		font-size: 20px !important;
 	}
 }
-html a {
-	color:inherit;
+a, a:visited {
+	color:#4091dd;
 }
 .navButtons a {
 	background: #444;
