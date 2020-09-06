@@ -7,9 +7,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link type="text/css" href="../atlanta/css/neighborhood.css" rel="stylesheet" />
 <link rel="icon" type="image/x-icon" href="../atlanta/img/logo/neighborhood-icon.png" />
-<title>Smart Neighborhoods</title>
-<script src="../localsite/js/jquery/jquery-1.12.4.min.js"></script>
+<title>Neighborhood.org</title>
+
+<script type="text/javascript" src="../localsite/js/d3.v5.min.js"></script>
+<script type="text/javascript" src="../localsite/js/jquery/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../localsite/js/showdown.min.js"></script>
+<script type="text/javascript" src="../localsite/js/localsite.js"></script>
+<!--
+<script type="text/javascript" src="../localsite/js/navigation.js"></script>
+-->
 <script src="../atlanta/js/navigation.js"></script>
+
+<link rel="stylesheet" href="../localsite/css/base.css" />
+
+
 </head>
 
 <body>
@@ -21,14 +32,18 @@
   </div>
 </div>
 
-<div class="content" style="margin-top:-40px; max-width:600px; position:relative">
+<div class="content" style="margin-top:-40px; position:relative">
 
-	<div style="position:absolute;top:0px;height:80px;width:100%;background-color:#fff;z-index: 2; border:0px solid blue">
+
+
+	<div style="overflow: auto; position:relative">
+		<!-- cover top of twitter -->
+		<div style="position:absolute;top:0px;height:80px;width:100%;background-color:#fff;z-index: 2; border:0px solid blue">
+		</div>
+
+		<a class="twitter-timeline" data-tweet-limit="5" href="https://twitter.com/GlenwoodParkATL/lists/neighborhood"></a> 
+		<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 	</div>
-
-	<a class="twitter-timeline" data-tweet-limit="5" href="https://twitter.com/GlenwoodParkATL/lists/neighborhood"></a> 
-	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 </div>
 
 <style>
