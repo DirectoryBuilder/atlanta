@@ -15,9 +15,13 @@
 <script type="text/javascript" src="../localsite/js/showdown.min.js"></script>
 <script type="text/javascript" src="../localsite/js/navigation.js"></script>
 <script type="text/javascript" src="../localsite/js/localsite.js?sidecolumn=community/nav.html"></script>
-<!--
-<script src="../atlanta/js/navigation.js"></script>
--->
+<script>
+	if(typeof menu=='undefined'){ var menu={}; }
+
+	param.titleArray = ["neighbor","hood",".org"]
+	param.headerLogoSmall = "<img src='/localsite/img/logo/partners/neighborhood-icon.png' style='width:40px;opacity:0.7'>"
+			  			
+</script>
 </head>
 
 <body>
@@ -84,8 +88,12 @@
 			<div note="cover top of twitter " style="position:absolute; padding:20px; top:0px; width:100%; background-color:#fff; z-index: 2; border:0px solid blue">
 
 				<b>Get Involved <a href="https://model.earth">Creating Embeddable <span style="white-space: nowrap;">Tools for Communities</span></a></b><br>
-				Join us for an upcoming  <a href="../community/challenge/meetups/">Beyond Carbon Web Challenge Work Session</a>
 
+				<!--
+				Join us for an upcoming  <a href="../community/challenge/meetups/">Beyond Carbon Web Challenge Work Session</a>
+				-->
+				<br>
+				
 			</div>
 		</div>
 		
