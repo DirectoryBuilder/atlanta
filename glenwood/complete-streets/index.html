@@ -1,68 +1,179 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html lang="en-us">
 <head>
- 	<meta charset="utf-8">
- 	<meta http-equiv="Content-Type" content="text/html;">
- 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
- 	<link type="text/css" href="../../../atlanta/css/neighborhood.css" rel="stylesheet" />
-  	<link rel="icon" type="image/x-icon" href="../../../img/logo/partners/neighborhood-icon.png" />
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html;">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
 
-	<title>Neighborhood.org - Glenwood Intersections</title>
+<title>Grant Park - Boulevard/Glenwood Crossing Concept</title>
+<link type="text/css" href="/localsite/css/base.css" rel="stylesheet" />
+<script type="text/javascript" src="/localsite/js/d3.v5.min.js"></script>
+<script type="text/javascript" src="/localsite/js/jquery/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="/localsite/js/localsite.js"></script>
+<script type="text/javascript" src="/localsite/js/showdown.min.js"></script>
+<script type="text/javascript" src="/localsite/js/navigation.js"></script>
 
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+  integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+  crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+  integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+  crossorigin=""></script>
+
+
+<script>
+	//param.titleArray = ["Grant Park"," Neighborhood Association"]
+	//param.header = "../../header.html"
+	//param.header = "/community/header.html"
+	//param.headerLogo = "<img src='../../img/logo/gpna-rect.png' style='width:60px; margin-right:10px'>";
+	//param.headerFile = "../../header.html"
+	//param.footer = "/localsite/footer.html"
+</script>
+<style>
+	.upperIconsX { display: none; }
+	.markdownEye { display: none; }
+	#logoholderX { background-image: none !important; }
+	#headerSiteTitle { font-size: 16px !important; }
+	.pageColumnTitleXX { position:absolute; bottom:0px; background-color: rgba(255, 255, 255, 0.7); margin-bottom:0px;}
+	h2 { font-weight: 600; }
+</style>
 </head>
 
 <body>
-<div id="header" style="display:none"></div>
+<div class="hideMobileX" style="background:#fff; min-heightX:150px; width:100%">
+	
+	<div class="herocenter hideMobile" style="position: absolute; z-index:2;">
+		
+	  </div>
 
-<div style="height:80px;background:#fff;z-index:1;width:100%;position:fixed;overflow:hidden;z-index:1000">
-  
-  <div style="float:left"><a href="../../downtown"><img class="headerLogo" src="../../../../atlanta/img/logo/neighborhood.png" /></a></div>
 
-  <div style="overflow:auto; border-left:0px solid #ccc; height:60px; margin:23px 40px 0 10px; padding-left:16px; font-size:13px">
+</div>
 
-    <div class="navLinks hideMobileWide" style="float:right;padding-top:6px">
-      <div style="float:left"><a href="../../downtown/">Atlanta</a></div>
-      <div style="float:left"><a href="../../hulsey/">Hulsey</a></div>
-      <div style="float:left"><a href="../../o4w">o4w</a></div>
-      <div style="float:left"><a href="../../midtown">Midtown</a></div>
-      <div style="float:left"><a href="../../quarry-yards">Quarry</a></div>
-    </div>
+<!--
+<div class="showMobile" style="text-align: center">
+	<img src="../img/logo/gpna-rect.png"  style="width:250px; opacity:.95; margin-top:30px; margin-left:30px" />
+</div>
+-->
 
+
+<!-- traffic map -->
+<!-- https://developers.google.com/maps/documentation/javascript/examples/layer-traffic#all -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYA3xs8qzirlMrtOYf5v7hEEq32dN79G4&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <style type="text/css">
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+        height: 500px;
+      }
+
+      /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      @media only screen and ( min-width: 980px ) {
+		.gm-style-pbc {
+		opacity: 0 !important;
+		}
+	  }
+    </style>
+    <script>
+      //"use strict";
+
+      function initMap() {
+        const myLatLng = { lat: 33.742, lng: -84.3682 };
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 14,
+          center: {
+            lat: 33.74,
+            lng: -84.3682
+          },
+          options: {
+		    gestureHandling: 'cooperative'
+		  }
+        });
+        const trafficLayer = new google.maps.TrafficLayer();
+        trafficLayer.setMap(map);
+
+        new google.maps.Marker({
+          position: myLatLng,
+          map,
+          title: "Hello World!",
+        });
+
+      }
+    </script>
+    <div id="map"></div>
+<!-- /traffic map -->
+
+
+<div class="content contentpadding">
+
+  <div style="float:right">
+  <a href="https://github.com/localsite/atlanta/tree/master/glenwood/complete-streets"><img src="../../img/logo/github.png" style="height:32px; margin: 0px 8px 2px 1.5px"></a>
   </div>
+
+  <h1>Boulevard/Glenwood Crossing Concept</h1>
+  
+  <a href="pdf/Glenwood-Complete-Streets.pdf">View PDF</a><br>
+
+  <h3>Reducing Traffic Congestion, Improving East-West Bike Route</h3>
+
+  Phase 1: Glenwood Ave could be connected to the Boulevard intersection on the north side of the fire station. 
+  A new traffic light could be added to allow for a direct bike and pedestrian crossing at Glenwood Ave. 
+  Access to Boulevard from an eastbound Glenwood Ave would reduce traffic 
+  on Cherokee and Sydney by Dakota Blue. Traffic would also be reduced at the two turns by CVS, which have no traffic lights.<br><br>
+
+  <img src="img/intersection.jpg" style="width:100%; max-width:1200px;">
+
+  <div style="clear:both"></div>
+
+  <br>
+
+  <div style="max-width:650px;">
+    Phase 2: GDOT adds left-turn route from I-20 freeway-exit using oneway streatch of Glenwood Ave. Traffic exiting freeway crosses Boulevard heading east on Glenwood.<br><br>
+
+    1. Allows freeway traffic and neighborhood traffic to continue straight toward Kroger without using neighborhood backstreets by CVS.<br><br>
+
+    2. Reduces vehicle traffic at Beltline crossings on Bill Kennedy Way in Glenwood Park by Kroger.<br><br>
+
+    3. Addition of left turn from westbound Glenwood Avenue to
+    southbound Boulevard further reduces traffic on neighborhood streets east of Boulevard.
+    <br><br>
+
+    4. Aligns crosswalk with a new protected multiuse bike path on Glenwood Ave from 
+    Boulevard to MHJ High School and the Beltline.<br><br>
+  </div>
+  <br>
+
+  <img src="img/intersection-existing.jpg" style="width:100%; max-width:1200px;"><br>
+  Existing intersection of Boulevard and Glenwood Avenue at I-20 Freeway<br><br>
+
+  <!--
+  Share your input by clicking the <a href="https://www.renewatlantabond.com/project/south-boulevard-complete-streets-6">Comment Card link here until February 26, 2021</a>.
+  -->
+
+  <!--
+  <img src="img/lightrail-walkway.png.webp">
+  Car traffic is not accurately represented on this 2-way rail route rendering.
+  -->
+
+
+  <h2>Freeway Cap Park - 2050</h2>
+  "Cap Park" would provide a green-belt of sports fields north of MegaKroger above a level of covered parking, with condos and storefronts facing north and south. This will allow the high-speed bike path from the Beltline to continue over both Boulevard and Park Ave, with a bike ramp connecting down to Cherokee Ave. A street could connect from the Cherokee bridge to Grant Street and Hill Street with smaller buildings and open sky.
+
 </div>
-<div style="height:75px">
-</div>
+<br><br>
 
-More recent page: <a href="https://gpna.org/locations/boulvard/">gpna.org/locations/boulvard</a><br><br>
-
-<div style="height:800px; width:100%">
-	<!-- https://docs.google.com/document/d/1JnvEDOClj1On_ZVAjyGmGff6g8SopijcLrV_cU-BNFA/ -->
-  <iframe src="Glenwood-Complete-Streets.pdf" style="position: relative; height: 100%; width: 100%; border: none" width="100%"></iframe>
-</div>
-
-
-<div style="color: #777;background-color:#FAFAFA;text-align:center;padding:0px 40px;text-align: justify;">
-
-
-	<!--
-	<h3 style="text-align:center;">We're Looking Forward <span style="white-space: nowrap">to an</span> <span style="white-space: nowrap">Amazing 2 Days</span></h3>
-	-->
-	
-
-	<br>
-	<div style="text-align: center">
-	
-	<h2><a href="../../../" style="text-decoration: none">Neighborhood.org</a></h2><br>
-
-	<!--
-	Please <a href="" target="_blank" style="text-decoration: underline;">contact us</a> if you have any questions.<br>
-	-->
-
-	</div>
-
-</div>
-
+<div id="footer" style="display:none"></div>
 
 </body>
 </html>
